@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Hamburger</title>
+    <style>
+      div label{ display: none;}
+      div section {
+        display: none;
+      }
+      input{
+         opacity: 0
+       }
+      html{
+        background: linear-gradient(red, yellow)
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 2em;
+        background-color: orange;
+        border-radius: 2em 1em 2em 0.5em;
+        border: dotted 3px hotpink
+      }
+
+      a:hover {
+        color: hotpink;
+        border: dotted 3px brown;
+        background-color: lime;
+      }
+
+      @media only screen and (max-width: 600px) {
+        div label{ display: block;}
+        div {
+          display: block;
+          text-align: left;
+        }
+        nav {
+          margin-left: 100em;
+          display: flex;
+          background-color: lightblue;
+          border: none;
+          flex-direction: column;
+          border-radius: 0;
+          transition: all 0.3s
+        }
+        div img {
+          width: 20%;
+          transition: all 0.3s ease-in-out;
+          transform: rotate(0deg);
+        }
+        input:checked + label img{
+          transition: all 0.3s ease-in-out;
+          transform: rotate(90deg);
+        }
+        input:checked ~ nav {
+          margin-left: 0;
+          transition: all 0.3s
+        }
+
+        a {
+          padding: 1em 0
+        }
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div class="">
+      <input id="hamb" type="checkbox" name="" value="">
+      <label for="hamb">
+        <img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-128.png" alt="">
+      </label>
+      <nav>
+        <a href="#">Appel</a>
+        <a href="#">Peer</a>
+        <a href="#">Banaan</a>
+        <a href="#">Kers</a>
+      </nav>
+    </div>
+
+  </body>
+</html>
