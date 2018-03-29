@@ -62,6 +62,11 @@ Onderin
   * Wat heb ik gedaan?
     * Ik heb geen server-side scripting toegevoegd
 ### Overig
+- [x] **Fallback-fonts**
+  * Waarom?
+    * Stel je internet is heel langzaam. Dan kan het zijn dat je (als je geen Fallback Font hebt) helemaal geen tekst op de website te zien krijgt. Dat is natuurlijk nooit de bedoeling.
+  * Wat heb ik gedaan?
+    * Ik gebruik "Sans-serif". Dat is een font die elke browser standaart heeft. Hierdoor heb ik geen fall-back font nodig.
 
 
 
