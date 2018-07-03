@@ -108,4 +108,5 @@ Zoals ook te zien is op onderstaande foto's, is mijn site erg responsive. Dit is
 
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht1/IMG_9584.JPG" alt="devicelab test"> 
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht1/IMG_9585.JPG" alt="devicelab test"> 
+<img src="https://github.com/muise001/browser-technologies/blob/master/opdracht1/IMG_9594.JPG" alt="devicelab test>
 
