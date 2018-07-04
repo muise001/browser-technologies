@@ -1,0 +1,29 @@
+<main class="webshop">
+
+  <% data.forEach((el) => { %>
+    <% if(el.name) { %>
+    <section class="product" id="<%=el.id%>">
+      <header>
+        <p><%=el.name%></p>
+      </header>
+      <main>
+        <p>&euro; <%=el.cost%></p>
+        <img src='<%=el.pic%>' alt='<%=el.name%>'>
+      </main>
+      <footer>
+        <form class='' action='<%=el.formAction%>' method='POST'>
+          <label for=''></label>
+          <input for='<%=el.shortName%>' type='number' name='<%=el.shortName%>' value='<%= el.amount %>' min="0" max="99">
+          <button id='<%=el.shortName%>' type='submit'>Add To Cart</button>
+        </form>
+      </footer>
+    </section>
+    <% } %>
+  <% }) %>
+
+  <footer>
+    <section>
+      <a href="/winkelwagen">Bekijk winkelwagen</a>
+    </section>
+  </footer>
+</main>

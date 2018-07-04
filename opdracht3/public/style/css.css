@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+body > header {
+  background-color: coral;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  z-index: 3;
+}
+
+body > header section {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 1rem;
+}
+
+body > header section a, body > header section input{
+  width: 9rem;
+  display: block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border: none;
+  font-size: 1rem;
+  background-color: white;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: black;
+  margin-top: 0.2rem;
+}
+
+body > header a:focus, body > header input:focus, body > header a:hover, body > header input:hover {
+  outline: 0;
+  animation: slightlyRotate 2s infinite
+}
+
+.product:focus-within {
+  transform: rotate(4deg) scale(1.2);
+}
+
+@keyframes slightlyRotate {
+  0% { transform: rotate(0) }
+  10% { transform: rotate(10deg) }
+  20% { transform: rotate(-20deg) }
+  30% { transform: rotate(10deg) }
+  40% { transform: rotate(-20deg) }
+  50% { transform: rotate(10deg) }
+  60% { transform: rotate(-20deg) }
+  70% { transform: rotate(0deg) }
+  100% { transform: rotate(0deg) }
+}
+
+@keyframes slightlyRotate2 {
+  0% { transform: rotate(0) }
+  10% { transform: rotate(10deg) scale(1.2)}
+  20% { transform: rotate(-20deg) scale(1)}
+  30% { transform: rotate(10deg) scale(1.2)}
+  40% { transform: rotate(-20deg) scale(1)}
+  50% { transform: rotate(10deg) scale(1.2)}
+  60% { transform: rotate(-20deg) scale(1)}
+  70% { transform: rotate(0deg) }
+  100% { transform: rotate(0deg) }
+}
+
+body > header form {
+  margin-bottom: 0.5rem;
+}
+
+body > main {
+  padding-top: 5rem;
+}
+
+body > main.webshop {
+  padding: 5rem 15%;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(24rem, 1fr) )
+}
+
+main.webshop > section {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 3rem 0;
+  margin: 2rem 3rem;
+  width: 18rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+main.webshop > section > header p {
+  position: absolute;
+  font-weight: 900;
+  width: 100%;
+  background-color: coral;
+  top: 0;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main.webshop main p {
+  position: absolute;
+  background: coral;
+  padding: 0.5rem 1rem;
+  top: 8rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+main.webshop > section img {
+  margin: 1rem 0;
+  width: 10rem;
+  opacity: 1;
+  transition: all 0.3s ease-in
+}
+
+main.webshop > section footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+main.webshop > section footer form {
+  padding: 1rem
+}
+
+main.webshop > section footer form input {
+  border: 4px solid coral;
+      height: 3rem;
+      width: 4rem;
+      font-size: 2rem;
+      vertical-align: middle;
+      margin-right: -0.3rem;
+      text-align: center;
+}
+
+main.webshop > section footer form button {
+  border: none;
+    padding: 1rem;
+    height: 3rem;
+    width: 6rem;
+    background: coral;
+    vertical-align: middle;
+        padding-bottom: 1.06rem;
+}
+
+main > a {
+  position: fixed;
+  top: 1.5rem;
+  left: 0;
+  z-index: 4;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 9rem;
+  text-align: center;
+  display: block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border: none;
+  font-size: 1rem;
+  background-color: white;
+  padding: 0.2rem;
+  text-decoration: none;
+  color: black;
+  margin-top: 0.2rem;
+}
+
+main > a:focus, main > a:hover {
+  animation: slightlyRotate 2s infinite;
+  outline: 0;
+}
+
+li {
+  list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 1rem 0;
+      padding : 1rem 0;
+      border: 3px solid coral
+}
+
+li img{
+  height: 3rem;
+  max-width: 3rem;
+}
+
+li p, form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15%;
+}
+
+li button {
+  height: 3rem;
+font-size: 2rem;
+line-height: 0;
+border: none;
+color: mediumvioletred;
+font-family: sans-serif;
+}
+
+li button:focus, li button:hover {
+  background: none;
+  animation: slightlyRotate2 2s infinite;
+  font-weight: 900;
+  outline: none;
+}
+
+.invisible {
+  opacity: 0;
+  transform: rotate(-10deg);
+}
+
+main.webshop > section img.animateToCart {
+  transform: translate(330%, -190%);
+  position: fixed;
+  transition: all 1.3s infinite
+}
+
+#spamBox {
+  width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+}
+
+.animateToCart {
+  opacity: 0;
+  top: 0!important;
+  right: 0!important;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+  <head>
+    <meta charset='utf-8'>
+    <title>BT</title>
+    <link rel="stylesheet" href="/style/css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <h1>Tosti Online</h1>
+      <h2>De lekkerste tosti voor 'n prikkie</h2>
+      <section>
+        <p>Winkelwagen = <%= inCart.amount %></p>
+        <form class="" action="/empty" method="POST" name="naarWinkelwagen">
+          <input type="submit" name="" value="remove All">
+        </form>
+        <a href="/winkelwagen">Bekijk winkelwagen</a>
+    </section>
+    </header>

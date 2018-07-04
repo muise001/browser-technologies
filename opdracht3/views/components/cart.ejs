@@ -1,0 +1,28 @@
+<main>
+  <a tabindex="1" href="/">terug</a>
+  <h1>Shoppingcart</h1>
+  <ul>
+    <% data.forEach((el) => { %>
+      <% if(el.amount > 1 && el.name){ %>
+        <li>
+          <form class="" action="<%=el.formAction2%>" method="post">
+            <button type="submit" name="button">x</button>
+          </form>
+          <img src="<%=el.pic%>" alt="<%=el.shortName%>">
+          <p><%= el.name %></p>
+          <p>aantal = <%=el.amount%></p>
+          <p>&euro; <%=el.cost%></p>
+        </li>
+      <% } %>
+    <% }) %>
+    <li>
+      <p>Aantal producten = <%= inCart.amount %></p>
+      <p>Totaal = &euro; <%= inCart.totalCost %></p>
+    </li>
+  </ul>
+</main>
+<footer>
+  <form class="" action="index.html" method="post">
+    <button type="submit" name="button">Naar afrekenen</button>
+  </form>
+</footer>
