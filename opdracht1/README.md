@@ -79,7 +79,7 @@ Onderin
     * Je zou kunnen zeggen dat je local-storage of cookies ook kan gebruiken als errorafhandeling. Als je cookies en local-storage namelijk goed gebruikt, zou je ervoor kunnen zorgen dat je pagina nooit leeg is. Ookal ligt bijvoorbeeld de API eruit.
   * Wat heb ik gedaan?
     * Ik heb local-storage toegevoegd die je laatste succesvolle zoekopdracht opslaat. Hierdoor kan je altijd je laatstbezochte opdracht terugzien.
-- [ ] **Device-lab testing**   
+- [x] **Device-lab testing**   
   * Waarom? 
     * Als je test op meerdere devices, zie je of je website goed werkt op allerlei verschillende apparaten. Je kan bijvoorbeeld testen op "responsiveness" of verschillende mobiele browsers
   * Waar testte ik op?
