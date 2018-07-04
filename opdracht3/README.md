@@ -29,7 +29,7 @@ Om de ervaring "super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken" te make
 - Winkelwagen wordt "onchange" aangepast
   - De knop "stop product in winkelwagen" wordt weggehaald. Zodra je een product toevoegd, vliegt hij naar je winkelwagentje. Hierdoor ziet de gebruiker dat het goed zit.
         
-## Wie support wat & wat doe ik eraan?
+## Wie support wat? & feature detection
 Leuk dat je het vraagt!
 
 ##### CSS
@@ -42,6 +42,9 @@ Leuk dat je het vraagt!
  - Box Shadows
    - 94.8 %
      - Zonder box-shadows ziet het design er iets minder "cool" uit, maar hij werkt alsnog
+ - Media Query
+   - 97.4 %
+     - Op telefoon werkt hij ook zonder media-queries. Hij is alleen iets minder mooi
 
 ##### JS
  - ForEach loop
@@ -56,7 +59,7 @@ Leuk dat je het vraagt!
 [bron : Caniuse](https://caniuse.com)
 
 ## DeviceLab Test 
-Ook heb ik getest in het Device Lab. Op het eerste device deed de site het perfect. De animaties waren 60fps, het grid (in combinatie met relatieve eenheden ('rem' en '%')) zorgde voor een automatisch responsive layout. Het enige wat jammer was is dat de knoppen over de header-tekst heen kwamen. Gelukkig zijn de knoppen belangrijker dan de H1 tekst.
+Ook heb ik getest in het Device Lab. Op het eerste device deed de site het perfect. De animaties waren 60fps, het grid (in combinatie met relatieve eenheden ('rem' en '%')) zorgde voor een automatisch responsive layout. Het enige wat jammer was is dat de knoppen over de header-tekst heen kwamen. Gelukkig zijn de knoppen belangrijker dan de H1 tekst. Zoals je ziet op de laatste foto heb ik dit later gefixt.
 
 Bij een ander device merkte ik dat de Javascript niet werkte... Ik wist niet eens dat dat ook nog kon. Gelukkig werkte mijn serverside-javascript als een engeltje.
 
@@ -64,6 +67,7 @@ Al met al kan je wel stellen dat dit een zeer geslaagde test was.
 
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht3/IMG_9589.JPG" alt="devicelab test 1">
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht3/IMG_9592.JPG" alt="devicelab test 2">
+<img src='https://github.com/muise001/browser-technologies/blob/master/opdracht3/responsive.png' alt="nieuw design">
 
 ## Conclussie
 Mijn site is toegankelijk voor 100% van de internet-gebruikers. Of je nou alleen HTML support, HTML en CSS of HTML, CSS en JS. Je kan mijn website altijd bezoeken. Doe dat ook vooral en geniet van je nieuwe tosti-ijzer en heerlijke tosti's 
