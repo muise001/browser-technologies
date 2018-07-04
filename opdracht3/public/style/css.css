@@ -80,7 +80,10 @@ body > main {
 
 body > main.webshop {
   padding: 5rem 15%;
+  display: flex;
   display: grid;
+  justify-content: space-around;
+  flex-wrap: wrap;
   grid-template-columns: repeat( auto-fit, minmax(24rem, 1fr) )
 }
 
@@ -254,10 +257,10 @@ pointer-events: none;
 
 #winkelwagenPopup {
   position: fixed;
-top: 5rem;
+top: 3rem;
 z-index: 4;
 width: 80%;
-margin: 10%;
+margin: 0 10%;
 background: white;
 padding: 2rem;
 }
@@ -275,4 +278,27 @@ padding: 2rem;
   text-align: center;
   cursor: pointer;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+@media only screen and (max-width: 600px) {
+  body > header section {
+    width: 100%;
+    margin: 0;
+    top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+  }
+  body > header section a, body > header section input {
+    width: auto;
+    height: 2rem;
+    min-width: 7rem;
+  }
+  body > main.webshop {
+    padding-top: 8rem;
+  }
+  body > header section p {
+    width: 100%;
+  }
 }
