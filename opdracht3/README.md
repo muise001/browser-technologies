@@ -16,7 +16,15 @@ De Case die ik gekozen heb, is de 'tosti-webshop'.
 De html-laag was verreweg de moeilijkste laag. Ik wist dat ik de opbouw logisch moest maken. Dit zou namelijk het skelet van de site worden. Hier was semantiek en logica belangrijk. Naast plane HTML heb ik in deze laag ook veel gewerkt aan het samenstellen van de data (de producten die vertoond worden op de site), het maken van de .ejs templates en werken aan de server-side scripting. Na een aantal tutorials te hebben gekeken over het afhandelen van formulieren via Node, kon ik aan de slag. 
 
 #### CSS
-Om de website echt een webshop
+Om ervoor te zorgen dat de webshop niet alleen accesible was voor browsers, maar ook voor mensen... Heb ik hover en focus states toegepast, rekening gehouden met kleur-contrasten. De Tab-route is logisch en optimaal. 
+
+#### JS
+Om de ervaring "super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken" te maken, heb ik nagedacht over gave features. 
+- Afbeelding zweeft het winkelwagentje in
+ - Omdat er vrij weinig feedback was (als het gaat om het winkelwagentje), heb ik ervoor gekozen om 
+- Winkelwagen niet meer als aparte pagina
+- Afbeeldingen faden in bij aankomst op de pagina
+- Winkelwagen wordt "onchange" aangepast
         
 
 ## Opdracht 3 - Progressive Enhanced Browser Technologies
