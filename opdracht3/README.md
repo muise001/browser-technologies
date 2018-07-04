@@ -63,7 +63,7 @@ Bij een ander device merkte ik dat de Javascript niet werkte... Ik wist niet een
 Al met al kan je wel stellen dat dit een zeer geslaagde test was.
 
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht3/IMG_9589.JPG" alt="devicelab test 1">
-<img src="https://github.com/muise001/browser-technologies/blob/master/opdracht3/IMG_9593.JPG" alt="devicelab test 1">
+<img src="https://github.com/muise001/browser-technologies/blob/master/opdracht3/IMG_9592.JPG" alt="devicelab test 2">
 
 ## Conclussie
 Mijn site is toegankelijk voor 100% van de internet-gebruikers. Of je nou alleen HTML support, HTML en CSS of HTML, CSS en JS. Je kan mijn website altijd bezoeken. Doe dat ook vooral en geniet van je nieuwe tosti-ijzer en heerlijke tosti's 
