@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Opdracht 2</title>
+    <style media="screen">
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: sans-serif;
+    }
+
+    body > h1 {
+      text-align: center;
+      color: white;
+      background: black;
+      padding: 1rem;
+    }
+
+    section {
+      width: 60%;
+      margin: 0 18%;
+    }
+
+    article {
+      margin: 3rem 0;
+    }
+
+    article h1 {
+      text-align: center;
+      font-size: 3rem
+    }
+
+    article h2 {
+      font-size: 2rem;
+    }
+
+    article p {
+      line-height: 2;
+      font-size: 1rem;
+      margin: 0.5rem 0 0.5rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-around;
+      background-color: black;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .js {
+      flex-direction: column;
+      width: 20%;
+      top: 4.3rem;
+      position: fixed;
+      min-width: 10rem;
+      opacity: 0;
+      transition: 0.3s all ease-in-out
+    }
+
+    .js a {
+      padding: 1rem;
+    }
+
+    #imgBox {
+      z-index: 3;
+      position: fixed;
+      top: 0;
+      height: 4.3rem;
+      width: 4.3rem;
+      background: white;
+    }
+
+    #imgBox img {
+      margin: 0.7rem;
+      width: 3rem;
+      transition: all 0.3s ease-in-out
+    }
+
+    .rotate {
+      transform: rotate(90deg);
+    }
+
+    .visible {
+      opacity: 1;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>1-Click</h1>
+    <nav>
+      <a href="#what">What is it</a>
+      <a href="#patent">Patent</a>
+      <a href="#licensing">Licensing</a>
+    </nav>
+    <section>
+      <article id="what">
+        <h1>What is it?</h1>
+        <p>1-Click, also called one-click or one-click buying, is the technique of allowing customers to make online purchases with a single click, with the payment information needed to complete the purchase having been entered by the user previously.[1] More particularly, it allows an online shopper using an Internet marketplace to purchase an item without having to use shopping cart software. Instead of manually inputting billing and shipping information for a purchase, a user can use one-click buying to use a predefined address and credit card number to purchase one or more items.</p>
+      </article>
+      <article id="patent">
+        <h1>The patent</h1>
+        <p>The United States Patent and Trademark Office (USPTO) issued US 5960411 for this technique to Amazon.com in September 1999. Amazon.com also owns the "1-Click" trademark.</p>
+        <p>On May 12, 2006, the USPTO ordered a reexamination of the "One-Click" patent, based on a request filed by Peter Calveley. Calveley cited as prior art an earlier e-commerce patent and the Digicash electronic cash system.</p>
+        <p>On October 9, 2007, the USPTO issued an office action in the reexamination which confirmed the patentability of claims 6 to 10 of the patent.[4] The patent examiner, however, rejected claims 1 to 5 and 11 to 26. In November 2007, Amazon responded by amending the broadest claims (1 and 11) to restrict them to a shopping cart model of commerce. They have also submitted several hundred references for the examiner to consider. In March 2010, the reexamined and amended patent was allowed.</p>
+        <p>Amazon's U.S. patent expired on September 11, 2017.</p>
+        <p>In Europe, EP application 1134680 on 1-Click ordering was filed with the European Patent Office but refused. A related gift-ordering patent was granted in 2003, but revoked in 2007 following an opposition.[11]</p>
+        <p>In Canada, the Federal Court of Canada held that the One click patent could not be rejected as a pure business method since it had a physical effect. The Court remanded the application to the Canadian patent office for a reexamination.</p>
+      </article>
+      <article id="licensing">
+        <h1>licensing</h1>
+        <h2>Apple Inc.</h2>
+        <p>Amazon.com in 2000 licensed 1-Click ordering to Apple Computer (now Apple Inc.) for use on its online store.[13][14] Apple subsequently added 1-Click ordering to the iTunes Store[15] and iPhoto.[16]</p>
+        <h2>Barnes & Noble</h2>
+        <p>Amazon filed a patent infringement lawsuit in October 1999 in response to Barnes & Noble's offering a 1-Click ordering option called "Express Lane". After reviewing the evidence, a judge issued a preliminary injunction ordering Barnes & Noble to stop offering Express Lane until the case was settled.[17] Barnes & Noble had developed a way to design around the patent by requiring shoppers to make a second click to confirm their purchase.[18][19] The lawsuit was settled in 2002. The terms of the settlement, including whether or not Barnes & Noble took a license to the patent or paid any money to Amazon, were not disclosed.</p>
+        <p>In response to the lawsuit, the Free Software Foundation urged a boycott of Amazon.com. The boycott was lifted in September 2002.</p>
+      </article>
+    </section>
+    <script type="text/javascript">
+    if (document.querySelector) {
+      document.querySelector('nav').classList.add('js')
+      document.body.innerHTML += `<div id="imgBox"> <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/880223-200.png" alt="hamburgerMenu"> </div>`
+      document.getElementById('imgBox').addEventListener('click', () => {
+        document.querySelector('#imgBox img').classList.toggle('rotate')
+        document.querySelector('nav').classList.toggle('visible')
+      })
+    }
+    </script>
+  </body>
+</html>
