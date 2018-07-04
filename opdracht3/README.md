@@ -67,6 +67,8 @@ Al met al kan je wel stellen dat dit een zeer geslaagde test was.
 
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht3/IMG_9589.JPG" alt="devicelab test 1">
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht3/IMG_9592.JPG" alt="devicelab test 2">
+
+Nieuw design getoond op iPhone 4 :
 <img src='https://github.com/muise001/browser-technologies/blob/master/opdracht3/responsive.png' alt="nieuw design">
 
 ## Conclussie
