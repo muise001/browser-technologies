@@ -18,7 +18,7 @@ De Case die ik gekozen heb, is de 'tosti-webshop'.
 De html-laag was verreweg de moeilijkste laag. Ik wist dat ik de opbouw logisch moest maken. Dit zou namelijk het skelet van de site worden. Hier was semantiek en logica belangrijk. Naast plane HTML heb ik in deze laag ook veel gewerkt aan het samenstellen van de data (de producten die vertoond worden op de site), het maken van de .ejs templates en werken aan de server-side scripting. Na een aantal tutorials te hebben gekeken over het afhandelen van formulieren via Node, kon ik aan de slag. 
 
 #### CSS
-Om ervoor te zorgen dat de webshop niet alleen accesible was voor browsers, maar ook voor mensen... Heb ik hover en focus states toegepast, rekening gehouden met kleur-contrasten. De Tab-route is logisch en optimaal. Om ervoor te zorgen dat de pagina er altijd goed uitziet, heb ik zowel `display: grid` en `display: flex` toegepast. De pagina ziet er vrijwel hetzelfde uit met grid en flex. De enige reden waarom ik `display: flex` heb toegevoegd, is zodat hij op oudere devices en browsers goed zichtbaar is. 
+Om ervoor te zorgen dat de webshop niet alleen accesible was voor browsers, maar ook voor mensen... Heb ik hover en focus states toegepast, rekening gehouden met kleur-contrasten (getest met [funkify](https://www.funkify.org/)). De Tab-route is logisch en optimaal. Om ervoor te zorgen dat de pagina er altijd goed uitziet, heb ik zowel `display: grid` en `display: flex` toegepast. De pagina ziet er vrijwel hetzelfde uit met grid en flex. De enige reden waarom ik `display: flex` heb toegevoegd, is zodat hij op oudere devices en browsers goed zichtbaar is. 
 
 #### JS
 Om de ervaring "super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken" te maken, heb ik nagedacht over gave features. 
