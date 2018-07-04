@@ -241,3 +241,38 @@ pointer-events: none;
   top: 0!important;
   right: 0!important;
 }
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #0000008c;
+  z-index: 3;
+}
+
+#winkelwagenPopup {
+  position: fixed;
+top: 5rem;
+z-index: 4;
+width: 80%;
+margin: 10%;
+background: white;
+padding: 2rem;
+}
+
+.none {
+  display: none;
+}
+
+#afrekenen {
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+  width: 9rem;
+  background: coral;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

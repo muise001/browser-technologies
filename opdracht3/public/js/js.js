@@ -2,16 +2,22 @@
 
 const app = {
   init : function() {
+    document.body.innerHTML += '<div id="overig"></div>'
+    document.getElementById('overig').addEventListener('click', function(){
+      document.getElementById('overig').innerHTML = ""
+    })
+    document.querySelectorAll('.product button[type=submit]').forEach((button) => {
+      button.classList.add('none')
+    })
     document.querySelectorAll('form').forEach((form) => {
-      if (form.name != naarWinkelwagen) {
-        form.addEventListener('submit', (el) => {
-          el.preventDefault()
-        })
-      } else if (form.name == naarWinkelwagen) {
-        form.action = '/naarWinkelwagenMetJS'
-      }{
-
-      }
+      form.addEventListener('submit', (el) => {
+        el.preventDefault()
+      })
+    })
+    document.querySelector('body header a').setAttribute('href', '#')
+    document.querySelector('body header a').addEventListener('click', (el) => {
+      el.preventDefault()
+      app.vulWinkelwagen()
     })
     document.querySelectorAll('input[type=number]').forEach((input) => {
       input.addEventListener('change', app.changeCartValues)
@@ -38,6 +44,57 @@ const app = {
       document.querySelector('body > header section > p').innerHTML = `Winkelwagen = ${app.itemsInCart}`
     })
     console.log(this);
+  },
+  producten : [],
+  vulWinkelwagen() {
+    app['producten'] = []
+    document.querySelectorAll('.product').forEach((product) => {
+      if (product.childNodes[5].childNodes[1].childNodes[3].value >= 1) {
+        var naam = product.childNodes[1].childNodes[1].innerHTML
+        var aantal = product.childNodes[5].childNodes[1].childNodes[3].value
+        var prijs = product.childNodes[3].childNodes[1].innerHTML
+        var foto = product.childNodes[3].childNodes[3].src;
+        var geheel = {naam, aantal, prijs, foto}
+        app['producten'].push(geheel)
+      }
+    })
+    app.toonWinkelwagen()
+    // document.querySelector('#winkelwagenPopup')
+  },
+  toonWinkelwagen(){
+    document.getElementById('overig').innerHTML = `<section id="winkelwagenPopup"></section>`
+    document.getElementById('overig').innerHTML += `<div id="overlay"></div>`
+    document.getElementById('winkelwagenPopup').innerHTML = ""
+    console.log(app['itemsInCart']);
+    var totaleKosten = 0
+    app['producten'].forEach((product) => {
+      prijsInNum = product.prijs.split('€ ')
+      totaleKosten += parseInt(prijsInNum[1]) * product.aantal
+      console.log(totaleKosten);
+      document.getElementById('winkelwagenPopup').innerHTML += `
+      <ul>
+        <li>
+          <button type="submit" name="button">x</button>
+            <img src="${product.foto}" alt="${product.naam}">
+            <p>${product.naam}</p>
+            <p>aantal = ${product.aantal}</p>
+            <p>${product.prijs}</p>
+        </li>
+      </ul>
+      `
+    })
+    app.voegTotaalToe(totaleKosten)
+  },
+  voegTotaalToe : function (totaleKosten) {
+    document.querySelector('#winkelwagenPopup').innerHTML += `
+      <ul>
+        <li>
+          <p>Aantal producten = ${app['itemsInCart']}</p>
+          <p>Totaal = &euro; ${totaleKosten}</p>
+        </li>
+      </ul>
+      <p id='afrekenen'>Afrekenen</p>
+    `
   }
 }
 
