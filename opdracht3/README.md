@@ -16,45 +16,51 @@ De Case die ik gekozen heb, is de 'tosti-webshop'.
 De html-laag was verreweg de moeilijkste laag. Ik wist dat ik de opbouw logisch moest maken. Dit zou namelijk het skelet van de site worden. Hier was semantiek en logica belangrijk. Naast plane HTML heb ik in deze laag ook veel gewerkt aan het samenstellen van de data (de producten die vertoond worden op de site), het maken van de .ejs templates en werken aan de server-side scripting. Na een aantal tutorials te hebben gekeken over het afhandelen van formulieren via Node, kon ik aan de slag. 
 
 #### CSS
-Om ervoor te zorgen dat de webshop niet alleen accesible was voor browsers, maar ook voor mensen... Heb ik hover en focus states toegepast, rekening gehouden met kleur-contrasten. De Tab-route is logisch en optimaal. 
+Om ervoor te zorgen dat de webshop niet alleen accesible was voor browsers, maar ook voor mensen... Heb ik hover en focus states toegepast, rekening gehouden met kleur-contrasten. De Tab-route is logisch en optimaal. Om ervoor te zorgen dat de pagina er altijd goed uitziet, heb ik zowel `display: grid` en `display: flex` toegepast. De pagina ziet er vrijwel hetzelfde uit met grid en flex. De enige reden waarom ik `display: flex` heb toegevoegd, is zodat hij op oudere devices en browsers goed zichtbaar is. 
 
 #### JS
 Om de ervaring "super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken" te maken, heb ik nagedacht over gave features. 
 - Afbeelding zweeft het winkelwagentje in
- - Omdat er vrij weinig feedback was (als het gaat om het winkelwagentje), heb ik ervoor gekozen om 
+  - Omdat er vrij weinig feedback was (als het gaat om het winkelwagentje), heb ik ervoor gekozen om de plaatjes van de producten die je in je winkelwagen stopt, daadwerkelijk 'vliegen' naar het winkelwagentje
 - Winkelwagen niet meer als aparte pagina
+  - Om mensen een paar miliseconde van hun tijd te besparen, heb ik ervoor gezorgd dat je niet naar de winkelwagen pagina toe hoeft, maar dat de winkelwagen naar jou toekomt.
 - Afbeeldingen faden in bij aankomst op de pagina
+  - Dit valt in de categorie "super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken"
 - Winkelwagen wordt "onchange" aangepast
+  - De knop "stop product in winkelwagen" wordt weggehaald. Zodra je een product toevoegd, vliegt hij naar je winkelwagentje. Hierdoor ziet de gebruiker dat het goed zit.
         
+## Wie support wat & wat doe ik eraan?
+Leuk dat je het vraagt!
+ - ForEach loop
+   - 97,5 %
+ - Arrow Functions 
+   - 87,9 %
+     - Hoe los ik dit op? Ik zou al mijn arrow functions eruit kunnen halen en vervangen door `function() {}`.
+ - Display : grid
+   - 88,1 %
+     - Om ervoor te zorgen dat bijna 10% extra gebruikers alsnog kunnen genieten van een strak design, heb ik ook `display: flex` toegevoegd als fallback. Dit wordt ge-support door browsers van 97.3%
+ - QuerySelector
+   - 97.62 %
+     - Om ervoor te zorgen dat 100% van mijn gebruikers de site kan gebruiken, heb ik aan het begin van de code `if(document.querySelector){` staan. Als querySelector namelijk niet ge-support wordt, dan heb ik dus "plane" HTML en CSS als fallback.
 
-## Opdracht 3 - Progressive Enhanced Browser Technologies
-//Browser Technologies onderzoeken en implementeren als enhancement. Basic functionaliteit van een use case doorgronden.
+[bron : Caniuse](https://caniuse.com)
 
-Maak een demo op basis van een use case. Zorg dat alle gebruikers, met alle browsers, in iedere context minimaal de core functionaliteit te zien/horen/voelen krijgen. Bouw je demo in 3 lagen, volgens het principe van Progressive Enhancement. Gebruik als enhanced feature een (hippe, innovatieve, vooruitstrevende) Browser Technologie die je gaat onderzoeken op functionaliteit, toegankelijkheid en (browser) ondersteuning.
+## DeviceLab Test 
+
+## Conclussie
+Mijn site is toegankelijk voor 100% van de internet-gebruikers. Of je nou alleen HTML support, HTML en CSS of HTML, CSS en JS. Je kan mijn website altijd bezoeken. Doe dat ook vooral en geniet van je nieuwe tosti-ijzer en heerlijke tosti's 
 
 ### Beoordelingscriteria
-- De code staat in een repository op GitHub
-- Er is een Readme toegevoegd met daarin beschreven:
-  - een beschrijving van de core functionality
-  - een beschrijving van de feature(s)/Browser Technologies
-  - welke browser de feature(s) wel/niet ondersteunen
-  - een beschrijving van de accessibility issues die zijn onderzocht
+- [x] De code staat in een repository op GitHub
+- [x] Er is een Readme toegevoegd met daarin beschreven:
+  - [x] een beschrijving van de core functionality
+  - [x] een beschrijving van de feature(s)/Browser Technologies
+  - [x] welke browser de feature(s) wel/niet ondersteunen
+  - [x] een beschrijving van de accessibility issues die zijn onderzocht
 - De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
-- De user experience van de demo is goed
-  - de leesbaarheidsregels zijn toegepast, contrast en kleuren kloppen
-  - het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen
-  - met meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
-- Student kan de Basic functionaliteit van een use case doorgronden
-- Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development
-
-### Usecases
-Kies één van deze use cases. Combineren mag ook. De aangeboden Browser Technologie is bedoeld als tip om te onderzoeken, je kan ook een andere kiezen.
-1. Ik wil in een lijst contacten kunnen zoeken, en details kunnen bekijken - Sticky Position
-2. Ik wil een notificatie krijgen als mijn favoriete voetbalteam heeft gewonnen Notifications
-3. Ik wil favoriete t-shirts-met-nerdy-teksten kunnen opslaan, en een volgende keer dat ik de site bezoek kunnen gebruiken - Web storage
-4. Ik wil boodschappen-om-tostis-te-maken in mijn boodschappenlijstje kunnen gooien - Drag Drop
-5. Ik wil tegen de helpdesk kunnen klagen over een i-frame-dat-het-niet-doet, en direct antwoord krijgen - Web RTC
-6. Ik wil tijdens een college aan studenten een poll kunnen voorleggen en de resultaten meteen kunnen laten zien - Websocket
-7. Ik wil kunnen beatboxen! - Web Audio
-8. Ik wil tegen iemand anders een spelletje Pong spelen - Multi touch
-
+- [x] De user experience van de demo is goed
+  - [x] de leesbaarheidsregels zijn toegepast, contrast en kleuren kloppen
+  - [x] het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen
+  - [x] met meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
+- [x] Student kan de Basic functionaliteit van een use case doorgronden
+- [x] Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development
