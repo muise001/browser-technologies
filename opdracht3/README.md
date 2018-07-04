@@ -57,7 +57,7 @@ Mijn site is toegankelijk voor 100% van de internet-gebruikers. Of je nou alleen
   - [x] een beschrijving van de feature(s)/Browser Technologies
   - [x] welke browser de feature(s) wel/niet ondersteunen
   - [x] een beschrijving van de accessibility issues die zijn onderzocht
-- De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
+- [x] De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
 - [x] De user experience van de demo is goed
   - [x] de leesbaarheidsregels zijn toegepast, contrast en kleuren kloppen
   - [x] het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen
