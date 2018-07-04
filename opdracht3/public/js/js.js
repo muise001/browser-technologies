@@ -54,6 +54,7 @@ if (document.querySelector) {
           var naam = product.childNodes[1].childNodes[1].innerHTML
           var aantal = product.childNodes[5].childNodes[1].childNodes[3].value
           var prijs = product.childNodes[3].childNodes[1].innerHTML
+          console.log(product.childNodes[3].childNodes[3].src);
           var foto = product.childNodes[3].childNodes[3].src;
           var geheel = {naam, aantal, prijs, foto}
           app['producten'].push(geheel)
