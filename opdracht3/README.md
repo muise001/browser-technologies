@@ -31,21 +31,36 @@ Om de ervaring "super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken" te make
         
 ## Wie support wat & wat doe ik eraan?
 Leuk dat je het vraagt!
+
+##### CSS
+ - Display : grid
+   - 88,1 %
+     - Om ervoor te zorgen dat bijna 10% extra gebruikers alsnog kunnen genieten van een strak design, heb ik ook `display: flex` toegevoegd als fallback. Dit wordt ge-support door 97.3% van de gebruikers' browsers
+ - CSS Animations
+   - 94.6 %
+     - Zonder animations ziet het design er iets minder "cool" uit, maar hij werkt alsnog
+ - Box Shadows
+   - 94.8 %
+     - Zonder box-shadows ziet het design er iets minder "cool" uit, maar hij werkt alsnog
+
+##### JS
  - ForEach loop
    - 97,5 %
  - Arrow Functions 
    - 87,9 %
      - Hoe los ik dit op? Ik zou al mijn arrow functions eruit kunnen halen en vervangen door `function() {}`.
- - Display : grid
-   - 88,1 %
-     - Om ervoor te zorgen dat bijna 10% extra gebruikers alsnog kunnen genieten van een strak design, heb ik ook `display: flex` toegevoegd als fallback. Dit wordt ge-support door browsers van 97.3%
  - QuerySelector
-   - 97.62 %
-     - Om ervoor te zorgen dat 100% van mijn gebruikers de site kan gebruiken, heb ik aan het begin van de code `if(document.querySelector){` staan. Als querySelector namelijk niet ge-support wordt, dan heb ik dus "plane" HTML en CSS als fallback.
-
+   - 97.6 %
+     - Om ervoor te zorgen dat 100% van mijn gebruikers de site kan gebruiken, heb ik aan het begin van de code `if(document.querySelector){` staan. Als querySelector namelijk niet ge-support wordt, dan heb ik dus "plane" HTML en CSS als fallback.    
+     
 [bron : Caniuse](https://caniuse.com)
 
 ## DeviceLab Test 
+Ook heb ik getest in het Device Lab. Op het eerste device deed de site het perfect. De animaties waren 60fps, het grid (in combinatie met relatieve eenheden ('rem' en '%')) zorgde voor een automatisch responsive layout. Het enige wat jammer was is dat de knoppen over de header-tekst heen kwamen. Gelukkig zijn de knoppen belangrijker dan de H1 tekst.
+
+Bij een ander device merkte ik dat de Javascript niet werkte... Ik wist niet eens dat dat ook nog kon. Gelukkig werkte mijn serverside-javascript als een engeltje.
+
+Al met al kan je wel stellen dat dit een zeer geslaagde test was.
 
 ## Conclussie
 Mijn site is toegankelijk voor 100% van de internet-gebruikers. Of je nou alleen HTML support, HTML en CSS of HTML, CSS en JS. Je kan mijn website altijd bezoeken. Doe dat ook vooral en geniet van je nieuwe tosti-ijzer en heerlijke tosti's 
