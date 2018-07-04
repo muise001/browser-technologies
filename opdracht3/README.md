@@ -1,5 +1,23 @@
 # Browser Technologies
-//Robuuste, toegankelijke websites leren bouwen …
+Het van Browser Technologies draait volledig om het toegankelijk maken van het web op browser niveau. Dit houdt in dat als je de website bekijkt als je geen JavaScript of CSS in je browser hebt, de website alsnog werkt.
+
+## De Case
+De Case die ik gekozen heb, is de 'tosti-webshop'.
+**Uitdagingen**
+ - Server-side scripting
+   - Ik wilde server-side toepassen zodat de website ook gebruikt kan worden zonder JavaScript. Dit was extra moeilijk omdat ik naast project Tech nooit gewerkt had met het afhandelen van server-side formulieren. Formulieren handelde ik namelijk vooral af met Javascript
+ - Vormgeving
+   - Vormgeving was voor mij altijd al een kritiek puntje. Nu moest ik er ook nog rekening mee houden dat ik CSS schreef die leesbaar was voor elke browser. 
+ - Het ontwerpen van een unieke ervaring
+   - Aangezien ik mijn hoofddoel al bereikt had met de server-side javascript, vroeg ik me af wat in nog zou moeten toevoegen met JavaScript. Uiteindelijk heb ik veel gave features toegevoegd. Hier vertel ik verder in dit verslag meer over.
+   
+## De Aanpak
+#### HTML
+De html-laag was verreweg de moeilijkste laag. Ik wist dat ik de opbouw logisch moest maken. Dit zou namelijk het skelet van de site worden. Hier was semantiek en logica belangrijk. Naast plane HTML heb ik in deze laag ook veel gewerkt aan het samenstellen van de data (de producten die vertoond worden op de site), het maken van de .ejs templates en werken aan de server-side scripting. Na een aantal tutorials te hebben gekeken over het afhandelen van formulieren via Node, kon ik aan de slag. 
+
+#### CSS
+Om de website echt een webshop
+        
 
 ## Opdracht 3 - Progressive Enhanced Browser Technologies
 //Browser Technologies onderzoeken en implementeren als enhancement. Basic functionaliteit van een use case doorgronden.
