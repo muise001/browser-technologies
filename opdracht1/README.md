@@ -82,31 +82,23 @@ Onderin
 - [ ] **Device-lab testing**   
   * Waarom? 
     * Als je test op meerdere devices, zie je of je website goed werkt op allerlei verschillende apparaten. Je kan bijvoorbeeld testen op "responsiveness" of verschillende mobiele browsers
-  * Wat heb ik gedaan?
-    * Niet getest
+  * Waar testte ik op?
+    * Is mijn site responsive
+    * Werkt mijn site goed
+    * Is de grootte van het menu goed
+  * Test 1 en 2. 
+    * De pagina werd snel geladen
+    * De content was goed zichtbaar
+    * Het formulier was makkelijk te bereiken
+  * Test 3. (javascript-loze telefoon)
+    * Na het zoeken kwamen er geen resultaten in beeld. Mijn error-afhandeling deed het niet (werkt ook met JS)
+    * Het navigeren werkte niet omdat hij het "event : hashchange" niet kon uitvoeren. 
+  * Algemeen
+    * De website was goed responsive.
+    * Het menu was altijd goed zichtbaar, zelfs met het toetsenbord in beeld
 
-### Device Lab Test
-
-Ook heb ik getest in het Device lab. Hier testte ik op:
- * Is mijn site responsive
- * Werkt mijn site goed
- * Is de grootte van het menu goed
-  
 Zoals ook te zien is op onderstaande foto's, is mijn site erg responsive. Dit is goed omdat hierdoor iedereen met een smartphone toegang heeft tot de website. 
-
-##### Wat opviel in de tests.
- * Test 1 en 2. 
-   * De pagina werd snel geladen
-   * De content was goed zichtbaar
-   * Het formulier was makkelijk te bereiken
- * Test 3. (javascript-loze telefoon)
-   * Na het zoeken kwamen er geen resultaten in beeld. Mijn error-afhandeling deed het niet (werkt ook met JS)
-   * Het navigeren werkte niet omdat hij het "event : hashchange" niet kon uitvoeren. 
- * Algemeen
-   * De website was goed responsive.
-   * Het menu was altijd goed zichtbaar, zelfs met het toetsenbord in beeld
 
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht1/IMG_9584.JPG" alt="devicelab test"> 
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht1/IMG_9585.JPG" alt="devicelab test"> 
 <img src="https://github.com/muise001/browser-technologies/blob/master/opdracht1/IMG_9594.JPG" alt="devicelab test">
-
