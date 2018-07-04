@@ -1,6 +1,8 @@
 # Browser Technologies
 Het van Browser Technologies draait volledig om het toegankelijk maken van het web op browser niveau. Dit houdt in dat als je de website bekijkt als je geen JavaScript of CSS in je browser hebt, de website alsnog werkt.
 
+Ervaar de tosti-hemel nu zelf! [Bekijk de Site](https://files-vuczwltqow.now.sh/)
+
 ## De Case
 De Case die ik gekozen heb, is de 'tosti-webshop'.
 **Uitdagingen**
